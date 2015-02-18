@@ -1,0 +1,9 @@
+<% wrap_layout :layout do %>
+  <article class="type-system-rounded">
+    <h1><%= current_article.title %></h1>
+    <p class="date"><%= current_article.date.strftime('%B %e, %Y') %></p>
+    <%= yield %>
+    <hr>
+    <p class="author"><%= current_article.data.author %></p>
+  </article>
+<% end %>

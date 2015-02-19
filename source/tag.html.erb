@@ -20,7 +20,7 @@ per_page: 12
       <%= article.summary %>
       <span class="author"><%= article.data.author %> </span> - <span class="date"><%= article.date.strftime('%e/%m/%Y') %></span>
       <% article.tags.each do |tag| %>
-        <a href="tags/<%= tag.downcase %>.html"> <%= tag %></a>
+        <a href="/tags/<%= tag.downcase %>.html"> <%= tag %></a>
       <% end %>
   </article>
 <% end %>

@@ -10,6 +10,7 @@ gem "bourbon"
 gem "neat"
 gem 'rack-contrib'
 gem 'nokogiri'
+gem 'therubyracer'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

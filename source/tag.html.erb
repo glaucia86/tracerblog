@@ -2,7 +2,9 @@
 pageable: true
 per_page: 12
 ---
-<h1>Articles tagged '<%= tagname %>'</h1>
+<p>
+  <h1>Articles tagged '<%= tagname %>'</h1>
+</p>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
@@ -12,11 +14,16 @@ per_page: 12
   <% end %>
 <% end %>
 
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-  <% end %>
-</ul>
+<% page_articles.each_with_index do |article, i| %>
+  <article class="type-system-rounded">
+    <h1><%= link_to article.title, article %></h1>
+      <%= article.summary %>
+      <span class="author"><%= article.data.author %> </span> - <span class="date"><%= article.date.strftime('%e/%m/%Y') %></span>
+      <% article.tags.each do |tag| %>
+        <a href="tags/<%= tag.downcase %>.html"> <%= tag %></a>
+      <% end %>
+  </article>
+<% end %>
 
 <% if paginate %>
   <% if next_page %>

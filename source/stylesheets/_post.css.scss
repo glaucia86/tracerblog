@@ -9,7 +9,9 @@ article.post {
   $light-gray: #DDD !default;
   $medium-screen: em(640) !default;
   $base-font-color: $dark-gray !default;
-  width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 
   h1, h2, h3  {
     margin: 0;
@@ -96,7 +98,8 @@ article.post {
     font-weight: 300;
     line-height: 1.4em;
     margin-bottom: 1.5em;
-    
+    color: transparentize($base-font-color, 0.2);
+
     span {
       font-family: $sans-serif-2;
       font-size: 0.8em;
@@ -106,7 +109,9 @@ article.post {
   p.created_at{
     color: transparentize($base-font-color, 0.3);
     text-align: center;
-    
+    border-bottom: 1px solid rgba(228,229,233,0.96);
+    padding-bottom: 40px;
+    margin: 40px 0px 40px 0px;    
     span.date {
       color: transparentize($base-font-color, 0.6);
       font-family: $sans-serif;
@@ -115,7 +120,10 @@ article.post {
     }
 
     span.author {
-      font-family: $sans-serif;
+      font-family: arial;
+      font-style: italic;
+      font-size: medium;
+      color: blue;
     }
   }
 

@@ -1,25 +1,24 @@
-<footer class="footer" role="contentinfo">
+<footer id="footer" class="footer" role="contentinfo">
   <div class="footer-logo">
-    <%= image_tag image_path('logo-minimal.svg') %>
+    <%= image_tag 'logo-minimal.svg', alt: 'Logo' %>
   </div>
-  <div class="footer-links">
-    <ul>
-      <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-    </ul>
-    <ul>
-      <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
-    </ul>
-    <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-    </ul>
+  <div class="social-links">
+    <% link_to 'https://twitter.com/tracersoft', target: '_blank' do %>
+      <%= image_tag 'icon-twitter.svg', alt: 'Twitter' %>
+    <% end %>
+    <% link_to 'http://github.com/tracersoft', target: '_blank' do %>
+      <%= image_tag 'icon-github.svg', alt: 'Github' %>
+    <% end %>
+    <% link_to 'http://facebook.com/tracersoft', target: '_blank' do %>
+      <%= image_tag 'icon-facebook.svg', alt: 'Facebook' %>
+    <% end %>
+    <% link_to 'https://www.linkedin.com/company/tracersoft', target: '_blank' do %>
+      <%= image_tag 'icon-linkedin.svg', alt: 'Linkedin' %>
+    <% end %>
   </div>
+
 
   <hr>
 
-  <p>Tracersoft <%= Time.now.year %></p>
+  <p><a href="http://tracersoft.com.br">@2015 tracersoft</a> </p>
 </footer>

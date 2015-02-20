@@ -14,10 +14,13 @@ per_page: 20
   <article class="type-system-rounded">
     <h1><%= link_to article.title, article %></h1>
       <%= article.summary %>
-      <span class="author"><%= article.data.author %> </span> - <span class="date"><%= article.date.strftime('%e/%m/%Y') %></span>
-      <% article.tags.each do |tag| %>
-        <a href="tags/<%= tag.downcase %>.html"> <%= tag %></a>
-      <% end %>
+      <span class="author"><%= article.data.author %> </span> - 
+      <span class="date"><%= article.date.strftime('%e/%m/%Y') %></span>
+      <span class="tags">
+        <% article.tags.each do |tag| %>
+          <a href="tags/<%= tag.downcase %>.html">  <%= tag %></a>
+        <% end %>       
+      </span>
   </article>
 <% end %>
 

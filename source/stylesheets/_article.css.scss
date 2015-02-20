@@ -143,5 +143,13 @@ article.type-system-rounded {
   span.author {
     font-family: $sans-serif;
   }
+
+  span.tags {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-family: arial;
+    font-size: medium;
+  }
+
 }
 

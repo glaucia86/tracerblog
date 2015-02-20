@@ -11,5 +11,9 @@ gem "neat"
 gem 'rack-contrib'
 gem 'nokogiri'
 gem 'therubyracer'
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 # For feed.xml.builder
 gem "builder", "~> 3.0"

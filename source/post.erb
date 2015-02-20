@@ -1,15 +1,15 @@
 <% wrap_layout :layout do %>
   <article class="post">
     <h1><%= current_article.title %></h1>
-    <p class="created_at"> 
+    <p class="publish-info"> 
       Escrito por: <span class='author'> <%= current_article.data.author %> </span>
       em <span class='date'> <%= current_article.date.strftime('%e de %B de %Y') %> </span>
       <br />
-      
-      <% current_article.tags.each do |tag| %>
-         <a href="/tags/<%= tag.downcase %>.html"> <%= tag %></a>
-      <% end %>
-
+      <span class="tags">       
+        <% current_article.tags.each do |tag| %>
+          <a href="/tags/<%= tag.downcase %>.html"> <%= tag %></a>
+        <% end %>
+      </span>
 
     </p>
 

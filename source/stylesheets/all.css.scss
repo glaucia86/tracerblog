@@ -12,7 +12,8 @@ body, html {
 
 .header-container {
   @include outer-container;
-
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.all {
@@ -27,7 +28,7 @@ section.content {
 }
 
 header {
-  padding: 18px 0;
+  padding: 40px 0;
 }
 
 article {

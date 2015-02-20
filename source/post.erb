@@ -1,9 +1,17 @@
 <% wrap_layout :layout do %>
-  <article class="type-system-rounded">
+  <article class="post">
     <h1><%= current_article.title %></h1>
     <p class="date"><%= current_article.date.strftime('%e/%m/%Y') %></p>
+    <p class="publish-info"> 
+      Escrito por: <span class='author'> <%= current_article.data.author %> </span>
+      em <span class='date'> <%= current_article.date.strftime('%e de %B de %Y') %> </span>
+      <br />
+      <span class="tags">       
+        <% current_article.tags.each do |tag| %>
+          <a href="/tags/<%= tag.downcase %>.html"> <%= tag %></a>
+        <% end %>
+      </span>
+    </p>
     <%= yield %>
-    <hr>
-    <p class="author"><%= current_article.data.author %></p>
   </article>
 <% end %>

@@ -1,5 +1,5 @@
 
-article.type-system-rounded {
+article.post {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
@@ -9,16 +9,13 @@ article.type-system-rounded {
   $light-gray: #DDD !default;
   $medium-screen: em(640) !default;
   $base-font-color: $dark-gray !default;
-  border-bottom: 1px solid rgba(228,229,233,0.96);
-  width: 720px;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  
-  h1, h2, h3, p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+
+  h1, h2, h3  {
     margin: 0;
+    text-align: center;
   }
 
   hr {
@@ -27,11 +24,6 @@ article.type-system-rounded {
     border-right: none;
     border-top: none;
     margin: $base-spacing 0;
-  }
-
-  p {
-    line-height: $base-line-height;
-    color: transparentize($base-font-color, 0.6);
   }
 
   a {
@@ -99,57 +91,44 @@ article.type-system-rounded {
     margin-bottom: 0.4em;
   }
 
-  span.date {
-    color: transparentize($base-font-color, 0.6);
-    font-family: $sans-serif;
-    font-size: 0.9em;
-    margin-bottom: 0.3em;
-  }
-
   p {
+    line-height: $base-line-height;
     font-family: $sans-serif;
     font-size: 1.05em;
     font-weight: 300;
     line-height: 1.4em;
     margin-bottom: 1.5em;
+    color: transparentize($base-font-color, 0.2);
 
     span {
       font-family: $sans-serif-2;
       font-size: 0.8em;
-      text-transform: uppercase;
+    }
+  }
+ 
+  p.publish-info{
+    color: transparentize($base-font-color, 0.3);
+    text-align: center;
+    border-bottom: 1px solid rgba(228,229,233,0.96);
+    padding-bottom: 40px;
+    margin: 40px 0px 40px 0px;    
+    span.date {
+      color: transparentize($base-font-color, 0.6);
+      font-family: $sans-serif;
+      font-size: 0.9em;
+      margin-bottom: 0.3em;
+    }
+
+    span.author {
+      font-family: arial;
+      font-style: italic;
+      font-size: medium;
+      color: blue;
     }
   }
 
-  a.read-more {
-    display: inline-block;
-    font-family: $sans-serif-2;
-    font-size: 0.8em;
-    font-weight: 700;
-    margin-left: 0.2em;
-    position: relative;
-    text-transform: uppercase;
-
-    span {
-      font-size: 1.5em;
-      position: absolute;
-      right: -12px;
-      top: -1px;
-    }
-  }
-  
   hr {
     width: 3em;
-  }
-
-  span.author {
-    font-family: $sans-serif;
-  }
-
-  span.tags {
-    text-transform: uppercase;
-    margin-left: 20px;
-    font-family: arial;
-    font-size: medium;
   }
 
 }

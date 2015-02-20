@@ -2,7 +2,7 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+Time.zone = "Brasilia"
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -24,12 +24,15 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/{num}"
 end
+
 activate :authors
 page "/feed.xml", layout: false
+
+activate :i18n
 
 ###
 # Page options, layouts, aliases and proxies

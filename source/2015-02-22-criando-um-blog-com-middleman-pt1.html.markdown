@@ -5,7 +5,7 @@ tags: blog, middleman
 author: Futrica
 ---
 
-Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando a ferramenta Middleman, esse tópico será divido em 3 posts: Instalação e configuração do Middleman; Desenvolvimento e Estilização, Deploy da aplicação usando Heroku e Mantendo e atualizando o blog através de Pull Requests do github.
+Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando a ferramenta Middleman, esse tópico será divido em 4 posts: Instalação e configuração do Middleman; Desenvolvimento e Estilização, Deploy da aplicação usando Heroku e Mantendo e atualizando o blog através de Pull Requests do github.
 
 ## Primeiro ... o que é *Middleman?*
 

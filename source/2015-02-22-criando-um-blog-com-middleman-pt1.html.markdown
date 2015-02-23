@@ -25,22 +25,30 @@ Para sua instalação é necessário que você tenha o Ruby instalado e configur
 
 Após a instalação das dependências, instalamos o middleman através do seguinte comando:
 
-`$ gem install middleman`
+```bash 
+$ gem install middleman
+```
 
 Pronto! Agora só ir ao terminal novamente e digitar:
 
-`$ middleman init nome_do_site`
+```bash 
+$ middleman init nome_do_site
+```
 
 Com isso toda estrutura do site é criada automaticamente … Mas calma aí vamos criar um blog … 
 
 ## Criando nosso Blog
 Middleman ainda conta com uma gem específica para criação de blog. Para instalar:
 
-`$ gem install middleman-blog`
+```bash
+$ gem install middleman-blog
+```
 
 Com a instalação pronta, basta rodar o comando para criar toda estrutura do blog:
 
-`$ middleman init nome_do_blog --template=blog`
+```bash
+$ middleman init nome_do_blog --template=blog
+```
 
 Vamos entender o que foi gerado:
 
@@ -61,7 +69,9 @@ Vamos entender o que foi gerado:
 
 Agora podemos inicializar o middleman:
 
-`$ middleman server`
+```bash 
+$ middleman server
+```
 
 
 > se por acaso tiver um erro parecido com o abaixo:
@@ -92,11 +102,15 @@ Toda a estrutura pronta com um só comando, já podemos navegar no posts, alinha
 
 Agora, vamos criar um novo post, basta digitar no termina a seguinte estrutura "middleman + article + nome-do-post":
 
-`$ middleman article exemplo-post`
+```bash 
+$ middleman article exemplo-post
+```
 
 Veja que foi criado um arquivo novo: "data da criação" + "nome do post":
 
-`create  source/2015-02-23-exemplo-post.html.markdown`
+```bash 
+create  source/2015-02-23-exemplo-post.html.markdown
+```
 
 Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 

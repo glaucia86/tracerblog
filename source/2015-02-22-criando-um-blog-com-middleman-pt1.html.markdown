@@ -96,7 +96,7 @@ Veja que foi criado um arquivo novo: “data da criação” + “nome do post�
 
 `create  source/2015-02-23-exemplo-post.html.markdown`
 
-Vamos dar uma olhada nesse arquivo criado, temos o cabeçario do post:
+Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 
 ```
 ---
@@ -120,10 +120,10 @@ author: "Nome do autor"
 ---
 ```
 
-O arquivo padrão gerado tem a extensão “.markdown” que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](https://help.github.com/articles/github-flavored-markdown/)
+O arquivo padrão gerado tem a extensão “.markdown” que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](http://daringfireball.net/projects/markdown/syntax)
 
 ## Conclusão 
 
 Middleman é um framework que facilita bastante a criação de páginas simples e performáticas, abstraindo toda a complexidade do código, nos fazendo focar no que realmente é importante: o conteúdo.
 
-** todo código gerado nesse exemplo você pode encontrar no [link](https://github.com/futrica/exemplo_blog)
+** Todo código gerado nesse exemplo você pode encontrar no [link](https://github.com/futrica/exemplo_blog)

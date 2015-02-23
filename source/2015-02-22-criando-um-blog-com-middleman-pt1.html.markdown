@@ -70,19 +70,19 @@ Agora podemos inicializar o middleman:
 >
 > Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer, com a seguinte linha abaixo:
 >
-> `gem ‘therubyracer’`
-> e rodar o comando <br />
-> `$ bundle` <br />
+> `gem ‘therubyracer’`<br />
+> e rodar o comando<br />
+> `$ bundle`<br />
 > ou instalar [nodeJS](http://nodejs.org/) <br />
 > Esse erro se dá pela falta de um compilador para os assets.
 
 Analisando a saída do comando:
 
-`== The Middleman is loading`
-`== The Middleman is standing watch at http://0.0.0.0:4567`
+`== The Middleman is loading`<br />
+`== The Middleman is standing watch at http://0.0.0.0:4567`<br />
 `== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
 
-Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, http://localhost:4567
+Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
  ![alt text](/images/blog.png "blog no ar!") 
 
@@ -92,7 +92,7 @@ Agora, vamos criar um novo post, basta digitar no termina a seguinte estrutura "
 
 `$ middleman article exemplo-post`
 
-Veja que foi criado um arquivo novo: “data da criação” + “nome do post”:
+Veja que foi criado um arquivo novo: "data da criação" + "nome do post":
 
 `create  source/2015-02-23-exemplo-post.html.markdown`
 
@@ -120,7 +120,7 @@ author: "Nome do autor"
 ---
 ```
 
-O arquivo padrão gerado tem a extensão “.markdown” que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](http://daringfireball.net/projects/markdown/syntax)
+O arquivo padrão gerado tem a extensão ".markdown" que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](http://daringfireball.net/projects/markdown/syntax)
 
 ## Conclusão 
 

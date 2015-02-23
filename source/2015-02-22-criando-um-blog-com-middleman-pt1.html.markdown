@@ -14,11 +14,13 @@ Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando 
 [Middleman](https://middlemanapp.com/) é uma ferramenta gratuita e open source, criada para facilitar o desenvolvimento de sites estáticos.
 
 O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, views e etc.
+
 Você só vai se preocupar com o conteúdo e a estilização.
 
 ## Instalando o Middleman
 
 Middleman é distribuído através de uma [RubyGem](https://rubygems.org/) ou Gem, que nada mais é do que a forma que o Ruby lida com bibliotecas reutilizáveis..
+
 Para sua instalação é necessário que você tenha o Ruby instalado e configurado, para isso recomendamos o [RVM](https://rvm.io/rvm/install).
 
 Após a instalação das dependências, instalamos o middleman através do seguinte comando:

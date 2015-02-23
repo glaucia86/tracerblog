@@ -12,7 +12,9 @@ Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando 
 *"Middleman is a static site generator using all the shortcuts and tools in modern web development."*
 
 [Middleman](https://middlemanapp.com/) é uma ferramenta gratuita e open source, criada para facilitar o desenvolvimento de sites estáticos.
-O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, as views e etc. e você só se preocupar com o conteúdo e a estilização.
+
+O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, views e etc.
+Você só vai se preocupar com o conteúdo e a estilização.
 
 ## Instalando o Middleman
 

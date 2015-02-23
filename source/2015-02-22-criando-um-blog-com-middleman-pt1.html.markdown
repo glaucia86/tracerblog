@@ -38,25 +38,25 @@ Middleman ainda conta com uma gem específica para criação de blog. Para insta
 
 `$ gem install middleman-blog`
 
-Com a instalação pronta basta rodar o comando para criar toda estrutura do blog:
+Com a instalação pronta, basta rodar o comando para criar toda estrutura do blog:
 
 `$ middleman init nome_do_blog --template=blog`
 
 Vamos entender o que foi gerado:
 
 
-`create  blog/.gitignore` = *arquivo que determina os arquivos que o git deve ignorar* <br />
-`create  blog/config.rb` = *arquivo de configuração do blog*<br />
-`create  blog/source` = *diretório com o "esqueleto" do site*<br />
-`create  blog/source/2012-01-01-example-article.html.markdown` = *exemplo de post* <br />
-`create  blog/source/calendar.html.erb` = *comportamentos de datas*<br />
-`create  blog/source/feed.xml.builder` = *arquivo para criação do feed*<br />
-`create  blog/source/index.html.erb` = *página inicial do site*<br />
-`create  blog/source/layout.erb` = *layout base do site*<br />
-`create  blog/source/tag.html.erb` = *página de tags*<br />
-`create  blog/source/stylesheets`  = *diretório com os estilos*<br />
-`create  blog/source/javascripts` = *diretório com os scripts*<br />
-`create  blog/source/images` = *diretório para armazenar imagens* <br />
+`create  blog/.gitignore` *arquivo que determina os arquivos que o git deve ignorar* <br />
+`create  blog/config.rb` *arquivo de configuração do blog*<br />
+`create  blog/source` *diretório com o "esqueleto" do site*<br />
+`create  blog/source/2012-01-01-example-article.html.markdown` *exemplo de post* <br />
+`create  blog/source/calendar.html.erb` *comportamentos de datas*<br />
+`create  blog/source/feed.xml.builder` *arquivo para criação do feed*<br />
+`create  blog/source/index.html.erb` *página inicial do site*<br />
+`create  blog/source/layout.erb` *layout base do site*<br />
+`create  blog/source/tag.html.erb` *página de tags*<br />
+`create  blog/source/stylesheets` *diretório com os estilos*<br />
+`create  blog/source/javascripts` *diretório com os scripts*<br />
+`create  blog/source/images` *diretório para armazenar imagens* <br />
 
 
 Agora podemos inicializar o middleman:
@@ -78,9 +78,11 @@ Agora podemos inicializar o middleman:
 
 Analisando a saída do comando:
 
-`== The Middleman is loading`<br />
-`== The Middleman is standing watch at http://0.0.0.0:4567`<br />
-`== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
+```
+== The Middleman is loading
+== The Middleman is standing watch at http://0.0.0.0:4567`
+== Inspect your site configuration at http://0.0.0.0:4567/__middleman/
+```
 
 Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
@@ -117,6 +119,8 @@ date =  data da criação do post
 tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
 podemos ainda adicionar a informação do autor do post:
 author: "Nome do autor"
+>>> linha em branco
+Conteúdo do Post
 ---
 ```
 

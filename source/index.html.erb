@@ -16,7 +16,7 @@ per_page: 20
     <p class="date"><%= article.date.strftime('%B %e, %Y') %></p>
     <%= article.summary %>
     <hr>
-    <p class="author"><%= article.data.author %></p>
+    <p class="author"><%= link_to article.data.author,twitter(article.data.author) %></p> 
   </article>
 <% end %>
 

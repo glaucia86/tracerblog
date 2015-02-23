@@ -62,8 +62,12 @@ activate :automatic_image_sizes
 # Methods defined in the helpers block are available in templates
 helpers do
   def twitter(author)
-    data.twitter[author]
-  end
+    if data.twitter[author] 
+      link_to author, data.twitter[author] 
+    else 
+      author 
+    end
+  end 
 end
 
 set :css_dir, 'stylesheets'

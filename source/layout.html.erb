@@ -6,7 +6,6 @@
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <title>tracerblog<%= ' - ' + current_article.title unless current_article.nil? %></title>
-
     <%= stylesheet_link_tag "all" %>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>

@@ -5,28 +5,25 @@ tags: blog, middleman
 author: Futrica
 ---
 
-Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando a ferramenta Middleman, esse tópico será divido em 3 posts: Instalação e configuração do Middleman; Configuração e Desenvolvimento; Deploy da aplicação usando Heroku.
+Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando a ferramenta Middleman, esse tópico será divido em 3 posts: Instalação e configuração do Middleman; Desenvolvimento e Estilização, Deploy da aplicação usando Heroku e Mantendo e atualizando o blog através de Pull Requests do github.
 
 ## Primeiro ... o que é *Middleman?*
 
 *"Middleman is a static site generator using all the shortcuts and tools in modern web development."*
 
-[Middleman](https://middlemanapp.com/) é uma ferramenta gratuita, criada pela [Thoughtbot](https://thoughtbot.com/), para geração de páginas estáticas.
-O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, as views e etc. e você só se preocupar com o conteúdo.
+[Middleman](https://middlemanapp.com/) é uma ferramenta gratuita e open source, criada para facilitar o desenvolvimento de sites estáticos.
+O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, as views e etc. e você só se preocupar com o conteúdo e a estilização.
 
 ## Instalando o Middleman
 
-Middleman é distribuído através de uma [RubyGem](https://rubygems.org/) ou Gem, que nada mais é que uma biblioteca de arquivos reutilizáveis em Ruby.
-Para instalação é necessário  que tenha instalado em sua máquina a linguagem de programação Ruby e o Framework gerenciador RubyGems.
-Acesse: [https://www.ruby-lang.org/en/downloads/](https://www.ruby-lang.org/en/downloads/) para instruções de como instalar Ruby.
+Middleman é distribuído através de uma [RubyGem](https://rubygems.org/) ou Gem, que nada mais é do que a forma que o Ruby lida com bibliotecas reutilizáveis..
+Para sua instalação é necessário que você tenha o Ruby instalado e configurado, para isso recomendamos o [RVM](https://rvm.io/rvm/install).
 
-Um vez com todos os requisitos instalados, basta abrir um terminal e digitar o seguinte comando:
+Após a instalação das dependências, instalamos o middleman através do seguinte comando:
 
 `$ gem install middleman`
 
-Pronto! Basta esse simples comando para poder usar o Middleman.
-
-Agora só ir ao terminal novamente e digitar:
+Pronto! Agora só ir ao terminal novamente e digitar:
 
 `$ middleman init seu_site`
 Com isso toda estrutura do site é criada automaticamente … Mas calma aí vamos criar um blog … 
@@ -74,9 +71,10 @@ Com isso já é possível rodar seu novo site, vá ao terminal e digite:
 > ou instalar [nodeJS](http://nodejs.org/) <br />
 > Esse erro se dá pela falta de um compilador para os assets.
 
-Analisando a saída do comando: <br />
-`== The Middleman is loading` <br />
-`== The Middleman is standing watch at http://0.0.0.0:4567` <br />
+Analisando a saída do comando:
+
+`== The Middleman is loading`
+`== The Middleman is standing watch at http://0.0.0.0:4567`
 `== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
 
 
@@ -96,21 +94,25 @@ Veja que foi criado um arquivo novo: “data da criação” + “nome do post�
 
 Vamos dar uma olhada nesse arquivo criado, temos o cabeçário:
 
---- <br />
-title: exemplo-post <br />
-date: 2015-02-23 13:19 UTC <br />
-tags: <br />
+```
+---
+title: exemplo-post
+date: 2015-02-23 13:19 UTC
+tags: exemplos
 --- 
+```
 
-Sendo que: <br />
+Sendo que:
 
---- <br />
-title = nome do post <br />
+```
+---
+title = nome do post
 date =  data da criação do post
 tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
-podemos ainda adicionar a informação do autor do post: <br />
-author: “Nome do autor” <br />
+podemos ainda adicionar a informação do autor do post:
+author: “Nome do autor”
 ---
+```
 
 ** aqui vai todo o conteúdo do post **
 

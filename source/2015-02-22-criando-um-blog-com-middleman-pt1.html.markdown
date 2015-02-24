@@ -80,8 +80,7 @@ $ middleman server
 >
 > */.rvm/gems/ruby-2.2.0/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)*
 >
-
-> Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer:
+> Não se preocupe, a solução é simples. Basta adicionar ao arquivo Gemfile a gem 'therubyracer', com a seguinte linha:
 >
 > `gem 'therubyracer'<br />
 > e rodar o comando<br />
@@ -91,17 +90,11 @@ $ middleman server
 
 Analisando a saída do comando:
 
-<<<<<<< HEAD
-`== The Middleman is loading`<br />
-`== The Middleman is standing watch at http://0.0.0.0:4567`<br />
-`== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
-=======
 ```bash
 == The Middleman is loading
 == The Middleman is standing watch at http://0.0.0.0:4567
 == Inspect your site configuration at http://0.0.0.0:4567/__middleman/
 ```
->>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 
 Podemos perceber que o site já está rodando, basta acessar o navegador em 'localhost' na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
@@ -123,15 +116,6 @@ create  source/2015-02-23-exemplo-post.html.markdown
 
 Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 
-<<<<<<< HEAD
-`---`
-`title: exemplo-post`
-`date: 2015-02-23 13:19 UTC`
-`tags: exemplos`
-`---`
-
-`Conteúdo do Post`
-=======
 
 ```markdown
 ---
@@ -139,21 +123,12 @@ title: exemplo-post
 date: 2015-02-23 13:19 UTC
 tags: exemplos
 --- 
->>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 
+Conteúdo do Post
+```
 
 Sendo que:
 
-<<<<<<< HEAD
-
-````` 
----
-  title = nome do post
-  date =  data da criação do post
-  tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
-  podemos ainda adicionar a informação do autor do post:
-  author: "Nome do autor"
-=======
 ```markdown
 ---
 title = nome do post
@@ -163,11 +138,8 @@ podemos ainda adicionar a informação do autor do post:
 author: "Nome do autor"
 #linha em branco
 Conteúdo do Post
->>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 ---
- 
-Conteúdo do Post
-`````
+```
 
 O arquivo padrão gerado tem a extensão ".markdown" que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](http://daringfireball.net/projects/markdown/syntax)
 
@@ -178,3 +150,4 @@ O Middleman é um framework que facilita bastante a criação de páginas simple
 No próximo post vamos explicar mais sobre como customizar o blog e algumas opções mais avançadas de desenvolvimento.
 
 ** Todo código gerado nesse exemplo você pode encontrar no [link](https://github.com/futrica/exemplo_blog)
+

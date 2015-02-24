@@ -25,13 +25,13 @@ Para sua instalação é necessário que você tenha o Ruby instalado e configur
 
 Após a instalação das dependências, instalamos o middleman através do seguinte comando:
 
-```bash 
+```bash
 $ gem install middleman
 ```
 
 Pronto! Agora só ir ao terminal novamente e digitar:
 
-```bash 
+```bash
 $ middleman init nome_do_site
 ```
 
@@ -52,19 +52,20 @@ $ middleman init nome_do_blog --template=blog
 
 Vamos entender o que foi gerado:
 
-
-`create  blog/.gitignore` *arquivo que determina os arquivos que o git deve ignorar* <br />
-`create  blog/config.rb` *arquivo de configuração do blog*<br />
-`create  blog/source` *diretório com o "esqueleto" do site*<br />
-`create  blog/source/2012-01-01-example-article.html.markdown` *exemplo de post* <br />
-`create  blog/source/calendar.html.erb` *comportamentos de datas*<br />
-`create  blog/source/feed.xml.builder` *arquivo para criação do feed*<br />
-`create  blog/source/index.html.erb` *página inicial do site*<br />
-`create  blog/source/layout.erb` *layout base do site*<br />
-`create  blog/source/tag.html.erb` *página de tags*<br />
-`create  blog/source/stylesheets` *diretório com os estilos*<br />
-`create  blog/source/javascripts` *diretório com os scripts*<br />
-`create  blog/source/images` *diretório para armazenar imagens* <br />
+```bash
+create  blog/.gitignore #arquivo que determina os arquivos que o git deve ignorar
+create  blog/config.rb #arquivo de configuração do blog
+create  blog/source #diretório com o "esqueleto" do site
+create  blog/source/2012-01-01-example-article.html.markdown #exemplo de post
+create  blog/source/calendar.html.erb #comportamentos de datas
+create  blog/source/feed.xml.builder #arquivo para criação do feed
+create  blog/source/index.html.erb #página inicial do site
+create  blog/source/layout.erb #layout base do site
+create  blog/source/tag.html.erb #página de tags
+create  blog/source/stylesheets #diretório com os estilos
+create  blog/source/javascripts #diretório com os scripts
+create  blog/source/images #diretório para armazenar imagens
+```
 
 
 Agora podemos inicializar o middleman:
@@ -78,7 +79,11 @@ $ middleman server
 >
 > */.rvm/gems/ruby-2.2.0/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)*
 >
+<<<<<<< HEAD
 > Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer:
+=======
+> Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer, com a seguinte linha:
+>>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 >
 > `gem ‘therubyracer’`<br />
 > e rodar o comando<br />
@@ -88,9 +93,17 @@ $ middleman server
 
 Analisando a saída do comando:
 
+<<<<<<< HEAD
 `== The Middleman is loading`<br />
 `== The Middleman is standing watch at http://0.0.0.0:4567`<br />
 `== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
+=======
+```bash
+== The Middleman is loading
+== The Middleman is standing watch at http://0.0.0.0:4567`
+== Inspect your site configuration at http://0.0.0.0:4567/__middleman/
+```
+>>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 
 Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
@@ -112,6 +125,7 @@ create  source/2015-02-23-exemplo-post.html.markdown
 
 Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 
+<<<<<<< HEAD
 `---`
 `title: exemplo-post`
 `date: 2015-02-23 13:19 UTC`
@@ -119,10 +133,20 @@ Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 `---`
 
 `Conteúdo do Post`
+=======
+
+```markdown
+---
+title: exemplo-post
+date: 2015-02-23 13:19 UTC
+tags: exemplos
+--- 
+>>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 
 
 Sendo que:
 
+<<<<<<< HEAD
 
 ````` 
 ---
@@ -131,6 +155,17 @@ Sendo que:
   tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
   podemos ainda adicionar a informação do autor do post:
   author: "Nome do autor"
+=======
+```markdown
+---
+title = nome do post
+date =  data da criação do post
+tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
+podemos ainda adicionar a informação do autor do post:
+author: "Nome do autor"
+#linha em branco
+Conteúdo do Post
+>>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2
 ---
  
 Conteúdo do Post

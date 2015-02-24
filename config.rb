@@ -83,6 +83,11 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 set :images_dir, 'images'
 
+activate :syntax
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

@@ -63,15 +63,23 @@ activate :i18n
 activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def twitter(author)
+    if data.twitter[author] 
+      link_to author, data.twitter[author] 
+    else 
+      author 
+    end
+  end 
+end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
+
+set :markdown_engine, :redcarpet
+
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 set :images_dir, 'images'
 
@@ -96,3 +104,5 @@ end
 configure :development do
   activate :livereload
 end
+
+activate :syntax

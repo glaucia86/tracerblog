@@ -78,7 +78,7 @@ $ middleman server
 >
 > */.rvm/gems/ruby-2.2.0/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)*
 >
-> Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer, com a seguinte linha abaixo:
+> Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer:
 >
 > `gem ‘therubyracer’`<br />
 > e rodar o comando<br />
@@ -88,11 +88,9 @@ $ middleman server
 
 Analisando a saída do comando:
 
-```
-== The Middleman is loading
-== The Middleman is standing watch at http://0.0.0.0:4567`
-== Inspect your site configuration at http://0.0.0.0:4567/__middleman/
-```
+`== The Middleman is loading`<br />
+`== The Middleman is standing watch at http://0.0.0.0:4567`<br />
+`== Inspect your site configuration at http://0.0.0.0:4567/__middleman/`
 
 Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
@@ -114,29 +112,29 @@ create  source/2015-02-23-exemplo-post.html.markdown
 
 Vamos dar uma olhada nesse arquivo criado, temos o cabeçalho do post:
 
-```
----
-title: exemplo-post
-date: 2015-02-23 13:19 UTC
-tags: exemplos
---- 
+`---`
+`title: exemplo-post`
+`date: 2015-02-23 13:19 UTC`
+`tags: exemplos`
+`---`
 
-Conteúdo do Post
-```
+`Conteúdo do Post`
+
 
 Sendo que:
 
-```
+
+````` 
 ---
-title = nome do post
-date =  data da criação do post
-tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
-podemos ainda adicionar a informação do autor do post:
-author: "Nome do autor"
->>> linha em branco
+  title = nome do post
+  date =  data da criação do post
+  tags = palavras para categorizar o assunto(separados por virgula) , exemplo: (ruby, rails).
+  podemos ainda adicionar a informação do autor do post:
+  author: "Nome do autor"
+---
+ 
 Conteúdo do Post
----
-```
+`````
 
 O arquivo padrão gerado tem a extensão ".markdown" que é uma linguagem de marcação dinâmica e simples de usar, para mais informações: [Documentação Markdown](http://daringfireball.net/projects/markdown/syntax)
 

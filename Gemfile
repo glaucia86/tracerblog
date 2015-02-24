@@ -12,3 +12,5 @@ gem 'nokogiri'
 gem 'heroku'
 gem "builder", "~> 3.0"
 gem 'i18n'
+gem 'middleman-syntax'
+gem 'redcarpet'

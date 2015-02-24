@@ -2,7 +2,7 @@
   <article class="post">
     <h1><%= current_article.title %></h1>
     <p class="publish-info"> 
-      Escrito por: <span class='author'> <%= current_article.data.author %> </span>
+      Escrito por: <span class='author'><%= twitter(current_article.data.author) %></span>
       em <span class='date'> <%= current_article.date.strftime('%e/%m/%Y') %> </span>
       <br />
       <span class="tags">       

@@ -13,3 +13,4 @@ gem 'nokogiri'
 gem "builder", "~> 3.0"
 gem 'i18n'
 gem "redcarpet"
+gem "puma"

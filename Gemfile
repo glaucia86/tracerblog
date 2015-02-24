@@ -12,9 +12,4 @@ gem 'rack-contrib'
 gem 'nokogiri'
 gem "builder", "~> 3.0"
 gem 'i18n'
-<<<<<<< HEAD
-gem 'middleman-syntax'
-gem 'redcarpet'
-=======
 gem "redcarpet"
->>>>>>> fecaf0d76f398eb35fefcb12902af05890ff26e2

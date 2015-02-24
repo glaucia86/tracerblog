@@ -5,21 +5,24 @@ tags: blog, middleman
 author: Futrica
 ---
 
-Neste post vamos mostrar como é rápido e fácil criar e manter um blog usando a ferramenta Middleman, esse tópico será divido em 4 posts: Instalação e configuração do Middleman; Desenvolvimento e Estilização, Deploy da aplicação usando Heroku e Mantendo e atualizando o blog através de Pull Requests do github.
+Criar e manter um blog usando o Middleman é fácil e rápido. Nessa série de 4 posts vamos explicar como: 
 
-## Primeiro ... o que é *Middleman?*
+* Instalar e configurar o Middleman;
+* Desenvolvimento e customização do blog;
+* Deploy da aplicação usando Heroku; 
+* Mantendo e atualizando o blog através de Pull Requests do Github.
+
+## Primeiro... o que é o *Middleman?*
 
 *"Middleman is a static site generator using all the shortcuts and tools in modern web development."*
 
-[Middleman](https://middlemanapp.com/) é uma ferramenta gratuita e open source, criada para facilitar o desenvolvimento de sites estáticos, *como este blog*.
+O [Middleman](https://middlemanapp.com/) é uma ferramenta gratuita e open source, criada para facilitar o desenvolvimento de sites estáticos, **como este blog**.
 
-O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, views e etc.
-
-Você só vai se preocupar com o conteúdo e a estilização.
+O framework se encarrega de fazer todo o trabalho como: estrutura de diretórios, criação das rotas, views, etc. Você só vai se preocupar com o conteúdo e a customização.
 
 ## Instalando o Middleman
 
-Middleman é distribuído através de uma [RubyGem](https://rubygems.org/) ou Gem, que nada mais é do que a forma que o Ruby lida com bibliotecas reutilizáveis..
+O Middleman é distribuído através de uma [RubyGem](https://rubygems.org/) ou Gem, que nada mais é do que a forma que o Ruby lida com bibliotecas reutilizáveis.
 
 Para sua instalação é necessário que você tenha o Ruby instalado e configurado, para isso recomendamos o [RVM](https://rvm.io/rvm/install).
 
@@ -35,10 +38,10 @@ Pronto! Agora só ir ao terminal novamente e digitar:
 $ middleman init nome_do_site
 ```
 
-Com isso toda estrutura do site é criada automaticamente … Mas calma aí vamos criar um blog … 
+Com isso toda estrutura do site é criada automaticamente… Mas calma aí vamos criar um blog … 
 
 ## Criando nosso Blog
-Middleman ainda conta com uma gem específica para criação de blog. Para instalar:
+O Middleman ainda conta com uma gem específica para criação de blog. Para instalar:
 
 ```bash
 $ gem install middleman-blog
@@ -67,41 +70,39 @@ create  blog/source/javascripts #diretório com os scripts
 create  blog/source/images #diretório para armazenar imagens
 ```
 
-
 Agora podemos inicializar o middleman:
 
 ```bash 
 $ middleman server
 ```
 
-
-> se por acaso tiver um erro parecido com o abaixo:
+> Se por acaso tiver um erro parecido com o abaixo:
 >
 > */.rvm/gems/ruby-2.2.0/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)*
 >
-> Não se preocupe, a solução é simples, basta adicionar ao arquivo Gemfile a gem therubyracer, com a seguinte linha:
+> Não se preocupe, a solução é simples. Basta adicionar ao arquivo Gemfile a gem 'therubyracer', com a seguinte linha:
 >
-> `gem ‘therubyracer’`<br />
+> `gem 'therubyracer'<br />
 > e rodar o comando<br />
 > `$ bundle`<br />
-> ou instalar [nodeJS](http://nodejs.org/) <br />
+> ou instalar o [nodeJS](http://nodejs.org/) <br />
 > Esse erro se dá pela falta de um compilador para os assets.
 
 Analisando a saída do comando:
 
 ```bash
 == The Middleman is loading
-== The Middleman is standing watch at http://0.0.0.0:4567`
+== The Middleman is standing watch at http://0.0.0.0:4567
 == Inspect your site configuration at http://0.0.0.0:4567/__middleman/
 ```
 
-Podemos perceber que o site já está rodando, basta acessar o navegador em ‘localhost’ na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
+Podemos perceber que o site já está rodando, basta acessar o navegador em 'localhost' na porta indicada 4567, [http://localhost:4567](http://localhost:4567)
 
  ![alt text](/images/blog.png "blog no ar!") 
 
-Toda a estrutura pronta com um só comando, já podemos navegar no posts, alinhar os posts por data ou por tags.
+Toda a estrutura pronta com um só comando, já podemos navegar na lista de posts, por data ou por tags.
 
-Agora, vamos criar um novo post, basta digitar no termina a seguinte estrutura "middleman + article + nome-do-post":
+Agora, vamos criar um novo post. Basta digitar no terminal o seguinte comando:
 
 ```bash 
 $ middleman article exemplo-post
@@ -144,6 +145,8 @@ O arquivo padrão gerado tem a extensão ".markdown" que é uma linguagem de mar
 
 ## Conclusão 
 
-Middleman é um framework que facilita bastante a criação de páginas simples e performáticas, abstraindo toda a complexidade do código, nos fazendo focar no que realmente é importante: o conteúdo.
+O Middleman é um framework que facilita bastante a criação de páginas simples e performáticas, abstraindo toda a complexidade do código, nos fazendo focar no que realmente importa: o conteúdo.
+
+No próximo post vamos explicar mais sobre como customizar o blog e algumas opções mais avançadas de desenvolvimento.
 
 ** Todo código gerado nesse exemplo você pode encontrar no [link](https://github.com/futrica/exemplo_blog)

@@ -5,7 +5,7 @@
       Escrito por: <span class='author'><%= twitter(current_article.data.author) %></span>
       em <span class='date'> <%= current_article.date.strftime('%e/%m/%Y') %> </span>
       <br />
-      <span class="tags">       
+      <span class="tags">
         <% current_article.tags.each do |tag| %>
           <a href="/tags/<%= tag.downcase %>.html">  <%= tag %></a>
         <% end %>

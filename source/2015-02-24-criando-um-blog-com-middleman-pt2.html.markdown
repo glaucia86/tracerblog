@@ -51,7 +51,7 @@ Vamos deixar o layout mais limpo e criar views específicas para o topo da pági
 ## Criando partials
 
 Partial é um "pedaço" de página que pode ser reutilizada em outra página, 
-cumprindo assim o princípio [DRY](http://pt.wikipedia.org/wiki/Ruby_on_Rails#DRY).
+cumprindo assim o princípio [DRY](http://pt.wikipedia.org/wiki/Don%27t_repeat_yourself).
 Crie dois arquivo com as seguintes configurações:
 
 ```erb

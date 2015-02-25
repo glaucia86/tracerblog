@@ -86,7 +86,7 @@ $ middleman server
 >
 > Não se preocupe, a solução é simples. Basta adicionar ao arquivo Gemfile a gem 'therubyracer', com a seguinte linha:
 >
-> `gem 'therubyracer'<br />
+> `gem 'therubyracer'` <br />
 > e rodar o comando<br />
 > `$ bundle`<br />
 > ou instalar o [nodeJS](http://nodejs.org/) <br />

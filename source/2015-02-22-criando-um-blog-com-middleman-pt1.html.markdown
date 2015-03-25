@@ -7,7 +7,7 @@ author: Futrica
 
 Criar e manter um blog usando o Middleman é fácil e rápido. Nessa série de 4 posts vamos explicar como: 
 
-Parte 01 - Instalar e configurar o Middleman;<br />
+[Parte 01 - Instalar e configurar o Middleman;](/criando-um-blog-com-middleman-pt2.html)<br />
 Parte 02 - Desenvolvimento e customização do blog;<br />
 Parte 03 - Deploy da aplicação usando Heroku; <br />
 Parte 04 - Mantendo e atualizando o blog através de Pull Requests do Github.<br />
@@ -86,7 +86,7 @@ $ middleman server
 >
 > Não se preocupe, a solução é simples. Basta adicionar ao arquivo Gemfile a gem 'therubyracer', com a seguinte linha:
 >
-> `gem 'therubyracer'<br />
+> `gem 'therubyracer'` <br />
 > e rodar o comando<br />
 > `$ bundle`<br />
 > ou instalar o [nodeJS](http://nodejs.org/) <br />

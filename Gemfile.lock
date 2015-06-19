@@ -161,3 +161,6 @@ DEPENDENCIES
   puma
   rack-contrib
   redcarpet
+
+BUNDLED WITH
+   1.10.4
